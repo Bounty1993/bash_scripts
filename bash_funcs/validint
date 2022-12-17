@@ -1,0 +1,8 @@
+#!/bin/bash
+
+validint() {
+	case ${1#-} in
+		*[!0-9]*) return false ;;
+		*) return true ;;
+	esac
+}
