@@ -2,7 +2,5 @@
 
 uinfo() 
 {
-	printf "%12s: %s\n" \ 
-	       USER "${USER:-No value assigned}" \ 
-	       PWD  "${PWD:-No value assigned}"
+	printf "%12s: %s\n" "USER" "${USER:- No value}" "PWD" "${PWD:-No value}"
 }
